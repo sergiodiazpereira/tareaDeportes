@@ -8,7 +8,7 @@ LEFT JOIN deportes ON deportes.idDeporte = usuarios_deportes.idDeporte;
 
 ----------------------------- MOSTRAR EL NUMERO DE DEPORTES CON ALGUN USUARIO INSCRITO ---------------------------
 SELECT COUNT(DISTINCT idDeporte) 
-FROM Usuarios_deportes;
+FROM usuarios_deportes;
 
 
 

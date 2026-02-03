@@ -44,6 +44,11 @@
         }
         
         public function cargarPaginaA(){
+            session_start();
+            if (!isset($_SESSION["idUsuario"])){
+                header("Location: index.php");
+                exit(); // Para no seguir ejecutando codigo
+            }
             $this->vista = "vMenu.php";
         }
     }

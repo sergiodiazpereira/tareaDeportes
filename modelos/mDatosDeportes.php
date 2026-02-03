@@ -11,7 +11,7 @@
         }
 
         public function contarDeportesUsados(){
-            $sql = 'SELECT COUNT(DISTINCT idDeporte) FROM Usuarios_deportes;';
+            $sql = 'SELECT COUNT(DISTINCT idDeporte) FROM usuarios_deportes;';
             $resultado = $this->conexion->query($sql);
             return $resultado->fetchColumn();
         }
